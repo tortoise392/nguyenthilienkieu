@@ -1,0 +1,34 @@
+.container {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 100vw;
+  height: 100vh;
+}
+
+.backdrop {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.1);
+	z-index: 888;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+}
+
+.content {
+	animation: change infinite 1.5s linear;
+}
+
+@keyframes change {
+	0% {
+		color: gray;
+	}
+	50% {
+		color: white;
+	}
+	100% {
+		color: gray;
+	}
+}
